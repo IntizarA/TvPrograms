@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5054A63E-006A-4313-A1B4-FFA99EE19487}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TvPrograms</RootNamespace>
+    <AssemblyName>TvPrograms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.3\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChannelAddOrUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChannelAddOrUpdate.Designer.cs">
+      <DependentUpon>ChannelAddOrUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Channel.cs" />
+    <Compile Include="Channels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Channels.Designer.cs">
+      <DependentUpon>Channels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Host.cs" />
+    <Compile Include="Hostes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hostes.Designer.cs">
+      <DependentUpon>Hostes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HostesAddInProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HostesAddInProgram.Designer.cs">
+      <DependentUpon>HostesAddInProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HostesAddOrUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HostesAddOrUpdate.Designer.cs">
+      <DependentUpon>HostesAddOrUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HostProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HostProgram.Designer.cs">
+      <DependentUpon>HostProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HostProgramAddUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HostProgramAddUpdate.Designer.cs">
+      <DependentUpon>HostProgramAddUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HostTVProgram.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="FormPrograms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrograms.Designer.cs">
+      <DependentUpon>FormPrograms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramsAddOrUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramsAddOrUpdate.Designer.cs">
+      <DependentUpon>ProgramsAddOrUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ShowAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowAll.Designer.cs">
+      <DependentUpon>ShowAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAllTabs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowAllTabs.Designer.cs">
+      <DependentUpon>ShowAllTabs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowChannelInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowChannelInfo.Designer.cs">
+      <DependentUpon>ShowChannelInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowPicture.Designer.cs">
+      <DependentUpon>ShowPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlPartController.cs" />
+    <Compile Include="TVPrograms.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="ChannelAddOrUpdate.resx">
+      <DependentUpon>ChannelAddOrUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Channels.resx">
+      <DependentUpon>Channels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrograms.resx">
+      <DependentUpon>FormPrograms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hostes.resx">
+      <DependentUpon>Hostes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HostesAddInProgram.resx">
+      <DependentUpon>HostesAddInProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HostesAddOrUpdate.resx">
+      <DependentUpon>HostesAddOrUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HostProgram.resx">
+      <DependentUpon>HostProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HostProgramAddUpdate.resx">
+      <DependentUpon>HostProgramAddUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramsAddOrUpdate.resx">
+      <DependentUpon>ProgramsAddOrUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowAll.resx">
+      <DependentUpon>ShowAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowAllTabs.resx">
+      <DependentUpon>ShowAllTabs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowChannelInfo.resx">
+      <DependentUpon>ShowChannelInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowPicture.resx">
+      <DependentUpon>ShowPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1631465417513-dd51c886144f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pawel-czerwinski-7m2JZWfgCJA-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pawel-czerwinski-7m2JZWfgCJA-unsplash1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pawel-czerwinski-7m2JZWfgCJA-unsplash2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1573399054516-90665ecc44be.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorCombination_60.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1631465417513-dd51c886144f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1632324220849-0a74efdcbbde1.jpg" />
+    <None Include="Resources\purple-button-png-4.png" />
+    <None Include="Resources\photo-1631465417513-dd51c886144f5.jpg" />
+    <None Include="Resources\photo-1631465417513-dd51c886144f4.jpg" />
+    <None Include="Resources\photo-1631465417513-dd51c886144f3.jpg" />
+    <None Include="Resources\photo-1631465417513-dd51c886144f2.jpg" />
+    <None Include="Resources\photo-1631465417513-dd51c886144f6.jpg" />
+    <None Include="Resources\photo-1564161231061-85389d520fa4.jpg" />
+    <None Include="Resources\photo-1523554888454-84137e72c3ce.jpg" />
+    <None Include="Resources\photo-1520643187271-06df1162815e.jpg" />
+    <None Include="Resources\photo-1505909182942-e2f09aee3e89.jpg" />
+    <None Include="Resources\fed70b.png" />
+    <None Include="Resources\5.jpg" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Resources\photo-1624821754499-5791a39a58e3.jpg" />
+    <None Include="Resources\photo-1615749190340-34c7c3b16784.jpg" />
+    <None Include="Resources\photo-1520643187271-06df1162815e1.jpg" />
+    <None Include="Resources\pawel-czerwinski-7m2JZWfgCJA-unsplash3.jpg" />
+    <None Include="Resources\fed70b1.png" />
+    <None Include="Resources\photo-1564161231061-85389d520fa41.jpg" />
+    <None Include="Resources\photo-1615749190340-34c7c3b167841.jpg" />
+    <None Include="Resources\photo-1631465417513-dd51c886144f7.jpg" />
+    <Content Include="Resources\photo-1632324220849-0a74efdcbbde.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
